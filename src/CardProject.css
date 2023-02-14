@@ -1,0 +1,29 @@
+.project-card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    border: 4px solid #0F0F0F;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: .5rem;
+}
+.project-card:hover{
+    border: 4px solid #fff;
+    transition: 1s;
+}
+.img{
+    width: 350px;
+    margin: 0;
+}
+.title{
+    width: 100%;
+    color: #fff;    
+    text-align: center;
+}
+.title h2{
+    background: #616161;
+    padding: .5rem;
+}
