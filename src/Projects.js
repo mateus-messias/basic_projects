@@ -7,28 +7,37 @@ const Projects = () => {
     const projetos = [
         {
             link: '',
-            image: './img/projeto.jpg',
+            image: './img/birthday_reminder.png',
             name: 'Birthday Remember',
         },
         {
             link: '',
-            image: './img/projeto.jpg',
-            name: 'Birthday Remember',
+            image: './img/tours.png',
+            name: 'Tours',
         },
         {
             link: '',
-            image: './img/projeto.jpg',
-            name: 'Birthday Remember',
+            image: './img/reviews.png',
+            name: 'Reviews',
+        },
+        {
+            link: '',
+            image: './img/accordion.png',
+            name: 'Accordion',
         },
     ]  
   return (
     <section className='container'>
-        {projetos.map((project) => {
-            const {link, image, name} = project
-            return (
-                <CardProject image={image} name={name}/>
-            )
-        })}               
+        <h2 className='title'>Projetos Simples em React</h2>
+        <div className="title-underline"></div>
+        <div className='projects-container'>
+            {projetos.map((project) => {
+                const {link, image, name} = project
+                return (
+                    <CardProject image={image} name={name}/>
+                )
+            })}
+        </div>
     </section>        
   )
 }

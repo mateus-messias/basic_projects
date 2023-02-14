@@ -6,7 +6,7 @@ const CardProject = ({image, name}) => {
     <div>
         <a href="#" className='project-card'>
             <img src={image} className='img'/>
-            <div className='title'>
+            <div className='project-name'>
                 <h2>{name}</h2>
             </div>
         </a>
