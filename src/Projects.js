@@ -6,24 +6,34 @@ import './Projects.css'
 const Projects = () => {  
     const projetos = [
         {
-            link: '',
+            link: 'https://react-course-birthday-reminder.netlify.app',
             image: './img/birthday_reminder.png',
             name: 'Birthday Remember',
         },
         {
-            link: '',
+            link: 'https://react-course-tours.netlify.app',
             image: './img/tours.png',
             name: 'Tours',
         },
         {
-            link: '',
+            link: 'https://react-course-reviews.netlify.app',
             image: './img/reviews.png',
             name: 'Reviews',
         },
         {
-            link: '',
+            link: 'https://react-course-accordion.netlify.app',
             image: './img/accordion.png',
             name: 'Accordion',
+        },
+        {
+            link: 'https://react-course-projectmenu.netlify.app',
+            image: './img/menu.png',
+            name: 'Menu',
+        },
+        {
+            link: 'https://react-course-slider.netlify.app',
+            image: './img/slider.png',
+            name: 'Slider',
         },
     ]  
   return (
@@ -34,7 +44,7 @@ const Projects = () => {
             {projetos.map((project) => {
                 const {link, image, name} = project
                 return (
-                    <CardProject image={image} name={name}/>
+                    <CardProject link={link} image={image} name={name}/>
                 )
             })}
         </div>
